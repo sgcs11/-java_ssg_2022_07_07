@@ -14,6 +14,9 @@ public class WiseSaying {
 
     @Override
     public String toString() {
-        return "메롱";
+        return "WiseSaying{" +
+                "id=" + id +
+                ", content=" + content +
+                ", author=" + author + "}";
     }
 }
