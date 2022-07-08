@@ -1,5 +1,11 @@
 package com.ll.exam;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Scanner;
 
 public class App {
@@ -21,6 +27,7 @@ public class App {
                     String content = sc.nextLine().trim();
                     System.out.printf("작가: ");
                     String author = sc.nextLine().trim();
+
                     int id = ++wiseSayingLastId; // 명언 글 번호 증가
 
                     WiseSaying wiesSaying = new WiseSaying(id, content, author);
